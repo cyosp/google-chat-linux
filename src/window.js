@@ -219,7 +219,7 @@ const buildMenu = (mainWindow) => {
 			label: 'About',
 			submenu: [
 				{
-					label: app.name + ' '+ app.getVersion() 
+					label: app.name + '  ⑂ CYOSP '+ app.getVersion()
 				},{
 					label: 'electron '+process.versions.electron
 				}
