@@ -77,6 +77,23 @@ const cleanOverlayIcon = () => {
 	}
 }
 
+
+const setFlashFrame = () => {
+	try {
+		mainWindow.flashFrame(true);
+	} catch (e) {
+		console.log(e)
+	}
+}
+
+const resetFlashFrame = () => {
+	try {
+		mainWindow.flashFrame(false);
+	} catch (e) {
+		console.log(e)
+	}
+}
+
 const getBrowserWindowOptions = () => {
 	return {
 		"title": process.title,
@@ -246,5 +263,7 @@ module.exports = {
 	onQuitEntryClicked: onQuitEntryClicked,
 	updateIcon: updateIcon,
 	setOverlayIcon: setOverlayIcon,
-	cleanOverlayIcon: cleanOverlayIcon
+	cleanOverlayIcon: cleanOverlayIcon,
+	setFlashFrame: setFlashFrame,
+	resetFlashFrame: resetFlashFrame
 }

@@ -101,8 +101,10 @@ const setIcon = (iconType) => {
 
 	if (iconType == "ATTENTION") {
 		WindowManager.setOverlayIcon();
+		WindowManager.setFlashFrame();
 	}else{
 		WindowManager.cleanOverlayIcon();
+		WindowManager.resetFlashFrame();
 	}
 }
 	
